@@ -10,7 +10,8 @@ module Webrat
         @block    = block
       end
     
-      def matches?(stringlike)
+      def matches?(stringlike, &block)
+        @block ||= block
         if Webrat.configuration.parse_with_nokogiri?
           matches_nokogiri?(stringlike)
         else

@@ -1,3 +1,9 @@
+== Git
+
+* Bug fixes
+
+  * Accept do/end blocks in matchers. (Peter Jaros)
+
 == 0.4.1 / 2009-01-31
 
 * Minor enhancements
